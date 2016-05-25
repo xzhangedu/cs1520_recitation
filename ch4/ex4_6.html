@@ -1,0 +1,28 @@
+<?xml version = "1.0"  encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- e4_6.html - A solution to Exercise 4.6
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+<title> Exercise 4.6 </title>
+</head>
+
+<body>
+<script type = "text/javascript">
+var first = 1, second = 1, next, count;
+
+str = prompt("Please input your sentence", "");
+
+var words = str.split(" ");
+
+words = words.sort();
+
+words_len = words.length;
+
+for (count = 0; count < words_len; count++)
+   document.write(words[count] + "<br/>");
+</script>
+</body>
+</html>

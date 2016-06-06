@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- e5_2.hmtl
+     A solution to Exercise 5.2 - events with radio buttons
+     -->
+<html lang = "en">
+  <head>
+    <title> Exercise 5.2 </title>
+    <script type = "text/javascript">
+    function colorChoice () {
+        var color;
+
+    // Put the DOM address of the elements array in a local variable
+
+        var radioElement = document.getElementById("colorsForm").elements;
+
+    // Determine which button was pressed
+
+        for (var index = 0; index < radioElement.length; index++) {
+
+            if (radioElement[index].checked) {
+                color = radioElement[index].value;
+                break;
+            }
+
+        }
+
+    // Produce an alert message about the chosen color
+
+        switch (color) {
+            case "red":
+          alert("Your favorite color is red");
+                break;
+            case "blue": 
+          alert("Your favorite color is blue");
+                break; 
+            case "green":
+          alert("Your favorite color is green");
+                break;    
+            case "yellow":
+          alert("Your favorite color is yellow");
+                break; 
+            case "orange":
+          alert("Your favorite color is orange");
+                break; 
+            default:
+                alert("Error in JavaScript function colorChoice");
+                break;
+        }
+    }
+    </script>
+    <meta charset = "utf-8" />
+  </head>
+  <body>
+    <h4> Choose your favorite color </h4>
+
+    <form id = "colorsForm">
+      <p>
+      <label> <input type = "radio"  name = "colorButton"  
+                     value = "red" /> Red
+      </label>
+      </p> <p>
+      <label> <input type = "radio"  name = "colorButton"  
+                     value = "blue" /> Blue
+      </label>
+      </p><p>
+      <label> <input type = "radio"  name = "colorButton"  
+                     value = "green" /> Green 
+      </label>
+      </p><p>
+      <label> <input type = "radio"  name = "colorButton"  
+                     value = "yellow" /> Yellow
+      </label>
+      </p><p>
+      <label> <input type = "radio"  name = "colorButton"  
+                     value = "orange" /> Orange
+      </label>
+      </p>
+    </form>
+    <script type = "text/javascript">
+      var dom = document.getElementById("colorsForm");
+      for (var i = 0; i < dom.childNodes.length; i++) {
+        childNodes[i].addEventListener('click',colorChoice, false);
+      }
+    </script>
+  </body>
+</html>

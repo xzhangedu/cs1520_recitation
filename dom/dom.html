@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="dom.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="top" class="topclass">
+            <p id="p1" class="p1class">
+                Hello
+            </p>
+            <p id="p2" class="p2class">
+                World
+            </p>
+        </div>
+        <div id="buttom" class="buttomclass">
+            <p id="buttom_p1" class="p1class p1class2" >
+                Good
+            </p>
+            <p id="buttom_p2" class="p2class">
+                Bye
+            </p>
+        </div>
+    </div>
+    <input type="button" onclick="callChildren()" value="call children"/><br/>
+    <input type="button" onclick="callBody()" value="call body"/><br/>
+    <input type="button" onclick="callCreateElement()" value="call create element"/><br/>
+    <input type="button" onclick="callGetById()" value="call get by id"/><br/>
+    <input type="button" onclick="callGetByTagName()" value="call get by tag names"/><br/>
+    <input type="button" onclick="callPrevSibling()" value="call prev sibling"/><br/>
+    <input type="button" onclick="callNextSibling()" value="call next sibling"/><br/>
+    <input type="button" onclick="callAppendChild()" value="call append child"/><br/>
+    <input type="button" onclick="callInsertBefore()" value="call insert before"/><br/>
+    <input type="button" onclick="callRemoveChild()" value="call remove child"/><br/>
+    <input type="button" onclick="callReplaceChild()" value="call replace child"/><br/>
+    <input type="button" onclick="callQuerySelectAll()" value="call query all"/><br/>
+    <input type="button" onclick="callQuerySelect()" value="call query"/><br/>
+</body>
+</html>
